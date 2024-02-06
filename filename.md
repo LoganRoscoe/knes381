@@ -11,7 +11,7 @@
 
 <p>However, this venue fits the city well as people can easily recognize the city of Calgary from this building and its associations to the stampede</p>
 
-<p>At the Saddledome many young and old hockey players try to test their V02 max!</p>
+<p>At the Saddledome many young and old hockey players try to test their V&#x0307O<sub>2</sub> max!</p>
 
 <span style="colour:red;">WELCOME TO THE C OF RED!!!.</span>
 
