@@ -7,7 +7,7 @@
 <p>The Calgary Stampede is arguably Calgary's greatest summer attraction housing a number of the worlds bestrodeo and music stars froma round the world</p>
 
 <p allign="right">
-  <img src=Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
+  <img src=PICTURES/Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
 </p>
 
 <p>Calgary is also a shorthour drive away from Banff</p>
