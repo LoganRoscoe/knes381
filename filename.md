@@ -1,7 +1,7 @@
-<H1><p style="text-align: center;"> Calgary is home to the Calgary Flames
+<H1><p style="text-align: center;"> Calgary is home to the Flames
 </p></H1>
 
-<p>Although the Flame's performance has been shaky the city of Calgary has the iconic saddledome</p>
+<p>Although the Flame's performance has been shaky but the city of Calgary has the iconic saddledome</p>
 
 <p>Many people across Canada dislike the Saddledome do to it's structure for holding concerts</p>
 
