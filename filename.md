@@ -15,7 +15,7 @@
 
 <span style="colour:red;">CALGARY IS ALSO HOME TO THE C OF RED!!!.</span>
 
-[Click here to see more](PICTURES/OIP)
+[Click here to see more](PICTURES/OIP.jfif)
 
 </body>
 </html>
