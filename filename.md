@@ -1,12 +1,11 @@
-<p allign"center"
-  <strong>Calgary is the best city in Canada</strong>
-</p>
+<H1><p style="text-align: center;"> Calgary is the best city in Canada
+</p></H1>
 
 <p>Calgary is also home to the Greatest Outdoor Show on Earth</p>
 
-<p>The Calgary Stampede is arguably Calgary's greatest summer attraction housing a number of the worlds bestrodeo and music stars froma round the world</p>
+<p>The Calgary Stampede is arguably Calgary's greatest summer attraction housing a number of the worlds best rodeo and music stars froma round the world</p>
 
-<p allign="right">
+<p align="right">
   <img src=PICTURES/Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
 </p>
 
@@ -16,7 +15,8 @@
 
 <span style="colour:red;">CALGARY IS ALSO HOME TO THE C OF RED!!!.</span>
 
-[This link will take you to my pictures](PICTURES/Calgaryskyline.jpg)
+[Click here to see more](https://www.calgary.ca/home.html)
 
 </body>
 </html>
+<h1> the end </h1>
