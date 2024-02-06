@@ -7,12 +7,12 @@
 <p>The Calgary Stampede is arguably Calgary's greatest summer attraction housing a number of the worlds bestrodeo and music stars froma round the world</p>
 
 <p allign="right">
-  <img src=Calgaryskyline.jpg alt="tripsavvy.com" width="200"/>
+  <img src=Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
 </p>
 
 <p>Calgary is also a shorthour drive away from Banff</p>
 
-<p>Banff is home to a number of breath taking hikes where many people try to te3st their V&#0307;0<sub>2</sub> max!</p>
+<p>Banff is home to a number of breath taking hikes where many people try to test their V02 max!</p>
 
 <span style="colour:red;">CALGARY IS ALSO HOME TO THE C OF RED!!!.</span>
 
