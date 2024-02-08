@@ -14,7 +14,7 @@
 
 <span style="colour:red;">WELCOME TO THE C OF RED!!!.</span>
 
-[Click here to see more](picture1/OIP.jfif)
+[Click here to see more](picture1/OIP.jpeg)
 
 </body>
 </html>
