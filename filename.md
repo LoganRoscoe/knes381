@@ -1,5 +1,4 @@
-<H1><p style="text-align: center;"> Calgary is home to the Flames
-</p></H1>
+<H1><p align= "center";> Calgary is home to the Flames</p></H1>
 
 <p>Although the Flame's performance has been shaky but the city of Calgary has the iconic saddledome</p>
 
@@ -15,7 +14,7 @@
 
 <span style="colour:red;">WELCOME TO THE C OF RED!!!.</span>
 
-[Click here to see more](PICTURES/OIP.jfif)
+[Click here to see more](picture1/OIP.jfif)
 
 </body>
 </html>
