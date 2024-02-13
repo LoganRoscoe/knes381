@@ -1,12 +1,10 @@
-<H1><p align= "center";> Calgary is home to the Flames</p></H1>
+<H1><p align= "center";> Calgary is Home to the Flames</p></H1>
 
 <p>Although the Flame's performance has been shaky but the city of Calgary has the iconic saddledome</p>
 
 <p>Many people across Canada dislike the Saddledome do to it's structure for holding concerts</p>
 
-<p align="right">
-  <img src=PICTURES/Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
-</p>
+<img align="right" src=PICTURES/Calgaryskyline.jpg alt="commons.wikimedia.org" width="180"/>
 
 <p>However, this venue fits the city well as people can easily recognize the city of Calgary from this building and its associations to the stampede</p>
 
