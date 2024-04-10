@@ -1,0 +1,269 @@
+% This is the "preamble" of the document. This is where the format options get set.
+% Pro-tip: things following the % mark will not be compiled by LaTeX. I'll be using them extensively to explain things as we go.
+% Note: not to scare you off of LaTeX, but it's normal to have problems. And ya girl has been having some. I've included the copyright info at the bottom of the document from the guy who wrote this package, because his documentation doesn't entirely match how it's actually used. So this is a combination of his working preamble along with my added commentary or explanation. 
+%% 
+
+
+\documentclass[stu,12pt,floatsintext]{apa7}
+% Document class input explanation ________________
+% LaTeX files need to start with the document class, so it knows what it's using
+% - This file is using the apa7 document class, as it has a lot of the formatting built in
+% There are two sets of brackets in LaTeX, for each command (the things that start with the slash \ )
+% - The squiggle brackets {} are mandatory for executing the command
+% - The square brackets [] are options for that command. There can be more than one set of square brackets for some commands
+% Options used in this document (general note - for each of these, if you want to use the other options, swap it out in that spot in the square brackets):
+% - stu: this sets the `document mode' as the "student paper" version. Other options are jou (journal), man (manuscript, for journal submission), and doc (a plain document)
+% --- The student setting includes things like 'duedate', 'course', and 'professor' on the title page. If these aren't wanted/needed, use the 'man' setting. It also defaults to including the tables and figures at the end of the document. This can be changed by including the 'floatsintext' option, as I have for you. If the instructor wants those at the end, remove that from the square brackets.
+% --- The manuscript setting is roughly what you would use to submit to a journal, so uses 'date' instead of 'duedate', and doesn't include the 'course' or 'professor' info. As with 'stu', it defaults to putting the tables and figures at the end rather than in text. The same option will bump those images in text.
+% --- Journal ('jou') outputs something similar to a common journal format - double columned text and figurs in place. This can be fun, especially if you are sumbitting this as a writing sample in applications.
+% --- Document ('doc') outputs single columned, single spaced text with figures in place. Another option for producing a more polished looking document as a writing sample.
+% - 12pt: sets the font size to 12pt. Other options are 10pt or 11pt
+% - floatsintext: makes it so tables and figures will appear in text rather than at the end. Unforunately, not having this option set breaks the whole document, and I haven't been able to figure out why. IT's GREAT WHEN THINGS WORK LIKE THEY'RE SUPPOSED TO.
+
+\usepackage[american]{babel}
+
+\usepackage{csquotes} % One of the things you learn about LaTeX is at some level, it's like magic. The references weren't printing as they should without this line, and the guy who wrote the package included it, so here it is. Because LaTeX reasons.
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+% biblatex: loads the package that will handle the bibliographic info. Other option is natbib, which allows for more customization
+% - style=apa: sets the reference format to use apa (albeit the 6th edition)
+\DeclareLanguageMapping{american}{american-apa} % Gotta make sure we're patriotic up in here. Seriously, though, there can be local variants to how citations are handled, this sets it to the American idiosyncrasies 
+\addbibresource{bibliography.bib} % This is the companion file to the main one you're writing. It contains all of the bibliographic info for your references. It's a little bit of a pain to get used to, but once you do, it's the best. Especially if you recycle references between papers. You only have to get the pieces in the holes once.`
+
+\usepackage[T1]{fontenc} 
+\usepackage{mathptmx} % This is the Times New Roman font, which was the norm back in my day. If you'd like to use a different font, the options are laid out here: https://www.overleaf.com/learn/latex/Font_typefaces
+% Alternately, you can comment out or delete these two commands and just use the Overleaf default font. So many choices!
+
+
+% Title page stuff _____________________
+\title{Human Digital Modeling Applications in Shoe Product Design} % The big, long version of the title for the title page
+\shorttitle{Human digital modeling in shoe design} % The short title for the header
+\author{Logan Roscoe}
+\duedate{April 8, 2024}
+% \date{January 17, 2024} The student version doesn't use the \date command, for whatever reason
+\affiliation{University of Calgary}
+\course{KNES 381} % LaTeX gets annoyed (i.e., throws a grumble-error) if this is blank, so I put something here. However, if your instructor will mark you off for this being on the title page, you can leave this entry blank (delete the PSY 4321, but leave the command), and just make peace with the error that will happen. It won't break the document.
+\professor{Dr. John Holash}  % Same situation as for the course info. Some instructors want this, some absolutely don't and will take off points. So do what you gotta.
+
+
+%\keywords{APA style, demonstration} % If you need to have keywords for your paper, delete the % at the start of this line
+
+\begin{document}
+\maketitle % This tells LaTeX to make the title page
+
+% \section{Introduction} This command is commented out, because I was taught it was redundant to have the paper's title and introduction together. If your instructor wants it to say "Introduction", delete the % at the start
+
+The use of human digital modeling in kinesiology is the future of product design in the market for shoes. Computer applications have made significant strides in recent years improving the accuracy of data collection for shoe design and development. Historically, a traditional development cycle involves the testing of physical prototypes, a time-consuming and expensive process for companies. Whereas, human digital modeling uses motion capture to receive data about the human foot and the movements it produces to evaluate foot shape and material elasticity for prototype testing (\cite{tang2011human}). This paper will examine the current uses of this technology in kinesiology, its limitations, and future developments. Furthermore, the impact of future human digital modeling technology on bio-mechanics, corporations, and consumers in shoe design.
+
+\section{Current state of human digital modeling}
+
+Current variations of human digital modeling in shoe product design are advantaged when compared to traditional methods of shoe design but still face many challenges. Varying motion capture software have different benefits and downsides. Motion capture software uses biomechanical data that can be transformed to simulate the interaction between the foot and the shoe to evaluate functional footwear design and comfort (\cite{tang2011human}). However, as \textcite{tang2011human} discuss, methods like the finite element model (FEM) require large amounts of 3D foot data. This data can be expensive to obtain as the design process requires many unique foot shapes and sizes to deliver subjective feelings of comfort to multiple consumers.
+
+Despite expensive initial costs, human digital modeling saves expenses further in development by the ability to reuse this data across different designs. As well as removing the necessity of physical prototypes and their testing from biomechanics laboratories in exchange for digital models based on computer-aided design (CAD) models (\cite{jing2021impact}). \cite{jing2021impact} demonstrate how this process allows for modeling freedom in combination with 3D printing technologies to create customizable molds. Implying the use of this technology to personalize shoes to maximize performance and comfort for athletes and consumers with access. Biomechanists can now simulate elasticity, angle, and speed shoes without manual testing. Revolutionizing the design process from engineering to experimentation through computer software.
+
+Although this process improves the economic efficiency of the design process there are still current limitations. Accurate motion capture software can be invasive or become occluded by varying camera angles (\cite{demirel2022digital}). While 2D markerless motion capture systems are not invasive they are less accurate affecting foot data (\cite{demirel2022digital}). Another issue that arises in current applications of human digital modeling is accurate anatomical models of the foot can be too complex for simulating interaction with footwear (\cite{jing2021impact}). 
+
+\section{Innovating human digital modeling}
+
+The future of human digital modeling is reliant on the innovation of new software and technology. Improvements in technology could address many of the limitations making modeling software inaccessible for general users. Furthermore, increasing precision reduces measurement errors to enhance efficiency and personalized customer experiences. Additional improvements to technology would include a reduction in cost and improvements to time efficiency for the motion capture process (\cite{demirel2022digital}). No clear software has emerged addressing technological issues affecting the shoe design process.
+
+The possibilities of the future and virtual reality (VR) are advancing and becoming more realistic every day. A virtual reality headset may in time become a household or personalized object. Virtual reality and augmented reality relate to digital human modeling as a continuation of digital prototyping (\cite{demirel2022digital}). The future application of VR could allow users to virtually try on shoes before purchasing them. Human digital modeling in combination with VR can provide a more personalized online shopping experience using data from CAD models.
+
+The prior areas of development and understanding are gateways for one goal of human digital modeling. The capability to easily tailor shoes to an individual's specific preferences and measurements. Innovation in this field improving accuracy, and accessibility to create custom designs immediately undergoing automatic biomechanical analysis. 
+
+\section{Implications of advancements in technology for kinesiology}
+
+Kinesiology will be able to effectively integrate advancements in technology for a better personalized experience for clients. Kinesiologists can use data/VR to find or create shoes that provide optimal levels of support and alignment from a client's foot shape and gait mechanics. The use of CAD model technology can be important for kinesiologists when designing shoes aimed at injury prevention or sports performance (\cite{tang2011human}). Human digital modeling software can examine differences between shoes' effects on gait pattern, muscle activation, joint loading, and internal/external contact forces (\cite{tang2011human}). These factors can be examined by kinesiologists to determine the optimal support to minimize the risk of injury (\cite{knapik2009injury}). At the same time, evaluate increased athletic performance from shoe design by examining the cushioning and elasticity of materials and structure. Furthermore, the use of this technology can support the rehabilitation of patients dealing with musculoskeletal injuries affecting gait. 
+
+The Direct benefits human digital modeling has on kinesiologists will affect future research and the workforce. Future states of software programs aim to decrease the size of data while making it more affordable. Providing kinesiology researchers with a larger database to identify the trends associated with shoe design, movement patterns, and injury risk. However, this lowers the dependence on kinesiologists in the laboratory setting of physical prototype testing and re-design process. Making a more cost-efficient design and manufacturing process leads to greater developments in shoe technology and research (\cite{jing2021impact}).
+
+\section{Conclusion}
+
+Human digital modeling has made shoe design a more efficient process. The process of storing biomechanical data has its limitations but can be used to design shoes quicker than traditional methods. Future research in this field aims to develop new software that can provide more accurate non-invasive capture methods and VR compatibility. Influencing the ability of kinesiologists to make shoes targeted at performance, injury prevention, and rehabilitation. Human digital modeling is the future of shoe design that cuts costs while increasing efficiency in kinesiology.
+
+
+\printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------
+
+@article{tang2011human,
+  title={Human foot modeling towards footwear design},
+  author={Tang, Yuk-Ming and Hui, Kin-Chuen},
+  journal={Computer-Aided Design},
+  volume={43},
+  number={12},
+  pages={1841--1848},
+  year={2011},
+  publisher={Elsevier}
+} 
+
+@inproceedings{jing2021impact,
+  title={The impact of digital technology on footwear design and manufacturing},
+  author={Jing, Yin and Ye, Lei and Zhu, Lin},
+  booktitle={2021 International conference on computer technology and media convergence design (CTMCD)},
+  pages={196--199},
+  year={2021},
+  organization={IEEE}
+}
+
+@article{demirel2022digital,
+  title={Digital human modeling: a review and reappraisal of origins, present, and expected future methods for representing humans computationally},
+  author={Demirel, H Onan and Ahmed, Salman and Duffy, Vincent G},
+  journal={International Journal of Human--Computer Interaction},
+  volume={38},
+  number={10},
+  pages={897--937},
+  year={2022},
+  publisher={Taylor \& Francis}
+}
+
+@article{knapik2009injury,
+  title={Injury reduction effectiveness of selecting running shoes based on plantar shape},
+  author={Knapik, Joseph J and Swedler, David I and Grier, Tyson L and Hauret, Keith G and Bullock, Steven H and Williams, Kelly W and Darakjy, Salima S and Lester, Mark E and Tobler, Steven K and Jones, Bruce H},
+  journal={The Journal of Strength \& Conditioning Research},
+  volume={23},
+  number={3},
+  pages={685--697},
+  year={2009},
+  publisher={LWW}
+}
+%%
+%% This is file `./samples/bibliography.bib',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `bibliography')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%% End of file `./samples/bibliography.bib'.
